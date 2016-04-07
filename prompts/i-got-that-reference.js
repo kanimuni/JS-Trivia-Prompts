@@ -13,9 +13,9 @@ function alter(num, name, obj1, obj2) {
 
 alter(num, name, obj1, obj2);
 
-console.log(num);
-console.log(name);
-console.log(obj1);
-console.log(obj2.val);
+console.log(num); //9001
+console.log(name); // "Zach"
+console.log(obj1); // {val:'foo'} WHY?
+console.log(obj2.val); // 'qux'   WHY?
 
 // What will each of the above log (and why)?

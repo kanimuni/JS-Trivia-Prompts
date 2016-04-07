@@ -13,11 +13,11 @@ var foo = {
 var findMentor = foo.key.getMentor;
 
 // What will each of the following log (and why)?
-console.log(foo.key.getMentor());
-console.log(findMentor());
+console.log(foo.key.getMentor()); //Sunny
+console.log(findMentor()); //undefined;
 
 // Modify each of the following invocations of `findMentor` to achieve the desired result
-console.log(findMentor()); // 'Zach'
+console.log(findMentor.apply(this)); // 'Zach'
 console.log(findMentor()); // 'Beth'
 console.log(findMentor()); // 'Sunny'
 
